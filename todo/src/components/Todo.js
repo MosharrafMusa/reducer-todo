@@ -4,7 +4,7 @@ import { initialState, todoReducer } from "../reducers/TodoReducer";
 
 import "./App.css";
 
-// import moment from "moment";
+import moment from "moment";
 
 function Todo() {
   const [state, dispatch] = useReducer(todoReducer, initialState);
@@ -36,7 +36,7 @@ function Todo() {
 
                 <div className="completed">
                   Completed <i className="fas fa-check"></i>{" "}
-                  {/* {moment(Date.now()).format("lll")} */}
+                  {moment(Date.now()).format("lll")}
                 </div>
               </span>
             ) : (
